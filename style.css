@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+nav {
+  background: #1e1e2f;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: #00adb5;
+}
+
+.dashboard, .courses, .player {
+  padding: 40px;
+  text-align: center;
+}
+.course-card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  padding: 10px 20px;
+  background: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar div {
+  height: 100%;
+  width: 0%;
+  background: #00adb5;
+  border-radius: 10px;
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-card {
+    width: 90%;
+  }
+}
